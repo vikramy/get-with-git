@@ -12,7 +12,7 @@ icf-jheinrichs
 
 #### On Windows
 
-Download & install [Git]("http://msysgit.github.io/") keeping all default settings.
+Download & install [Git](http://msysgit.github.io/) keeping all default settings.
 
 #### On Mac
 
