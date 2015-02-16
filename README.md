@@ -16,8 +16,4 @@ Download & install [Git](http://msysgit.github.io/) keeping all default settings
 
 #### On Mac
 
-Download Xcode (through the App Store). Not only will this install git, it also has a nice file compare utility. 
-
-#### On Linux.
-
-Sorry, you're on your own.
+Download Xcode (through the App Store). Not only will this install git, it also has a nice file compare utility.
