@@ -3,7 +3,7 @@
 
 ### Create your account on GitHub.com
 
-For the purpose of this and future sessions of Tech Crunch Munch, please create a new account on GitHub using icf- as the prefix, followed by your first initial and last name:
+If you don’t already have one (or don’t want to use an existing personal account) please create a GitHub account with your icfi email address. For the user name use icf- as the prefix, followed by your first initial and last name:
 
 e.g. Jeff Heinrichs
 icf-jheinrichs
@@ -14,6 +14,10 @@ icf-jheinrichs
 
 Download & install [Git](http://msysgit.github.io/) keeping all default settings.
 
+Optional: install the [github GUI](https://windows.github.com/)
+
 #### On Mac
 
 Download Xcode (through the App Store). Not only will this install git, it also has a nice file compare utility.
+
+Optional: install the [github GUI](https://mac.github.com/)
