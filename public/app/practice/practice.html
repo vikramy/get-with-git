@@ -1,0 +1,27 @@
+<div class="row">
+
+    <aside class="col-xs-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="panel-title">Practice</h1>
+            </div>
+            <nav class="panel-body">
+            <ul class="nav nav-pills nav-stacked">
+                <li ui-sref-active="active"><a ui-sref="practice.step({practiceStep:'step-1'})"><b>Step 1:</b> Configure Git</a></li>
+                <li ui-sref-active="active"><a ui-sref="practice.step({practiceStep:'step-2'})"><b>Step 2:</b> Pull Update</a></li>
+                <li ui-sref-active="active"><a ui-sref="practice.step({practiceStep:'step-3'})"><b>Step 3:</b> Make Changes in the Working Directory</a></li>
+                <li ui-sref-active="active"><a ui-sref="practice.step({practiceStep:'step-4'})"><b>Step 4:</b> Clean Slate</a></li>
+                <li ui-sref-active="active"><a ui-sref="practice.step({practiceStep:'step-5'})"><b>Step 5:</b> Make Changes in the Working Directory Redux</a></li>
+                <li ui-sref-active="active"><a ui-sref="practice.step({practiceStep:'step-6'})"><b>Step 6:</b> Dealing with Conflict</a></li>
+                <li ui-sref-active="active"><a ui-sref="practice.step({practiceStep:'step-7'})"><b>Step 7:</b> Push to central server and start a pull request</a></li>
+                <li ui-sref-active="active"><a ui-sref="practice.step({practiceStep:'final'})">Final Result</a></li>
+            </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <section class="col-xs-8">
+        <article class="slideVert" ui-view></article>
+    </section>
+
+</div>

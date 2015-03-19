@@ -1,0 +1,35 @@
+<div class="row">
+
+    <aside class="col-xs-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="panel-title">Commands</h1>
+            </div>
+            <nav class="panel-body">
+            <ul class="nav nav-pills nav-stacked">
+                <li ui-sref-active="active"><a ui-sref="commands.command({commandName:'init'})">Git Init</a></li>
+                <li ui-sref-active="active"><a ui-sref="commands.command({commandName:'clone'})">Git Clone</a></li>
+                <li ui-sref-active="active"><a ui-sref="commands.command({commandName:'status'})">Git Status</a></li>
+                <li ui-sref-active="active"><a ui-sref="commands.command({commandName:'add'})">Git Add</a></li>
+                <li ui-sref-active="active"><a ui-sref="commands.command({commandName:'mv'})">Git mv</a></li>
+                <li ui-sref-active="active"><a ui-sref="commands.command({commandName:'rm'})">Git rm</a></li>
+                <li ui-sref-active="active"><a ui-sref="commands.command({commandName:'commit'})">Git Commit</a></li>
+                <li ui-sref-active="active"><a ui-sref="commands.command({commandName:'push'})">Git Push</a></li>
+                <li ui-sref-active="active"><a ui-sref="commands.command({commandName:'branch'})">Git Branch</a></li>
+                <li ui-sref-active="active"><a ui-sref="commands.command({commandName:'checkout'})">Git Checkout</a></li>
+                <li ui-sref-active="active"><a ui-sref="commands.command({commandName:'merge'})">Git Merge</a></li>
+                <li ui-sref-active="active"><a ui-sref="commands.command({commandName:'stash'})">Git Stash</a></li>
+                <li ui-sref-active="active"><a ui-sref="commands.command({commandName:'pull'})">Git Pull</a></li>
+                <li ui-sref-active="active"><a ui-sref="commands.command({commandName:'fetch'})">Git Fetch</a></li>
+                <li ui-sref-active="active"><a ui-sref="commands.command({commandName:'reset'})">Git Reset</a></li>
+            </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <section class="col-xs-8">
+        <article class="slideVert" ui-view></article>
+    </section>
+</div>
+
+<p><a ui-sref="github" class="btn btn-default pull-right">GitHub &rarr;</a></p>
