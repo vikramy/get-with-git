@@ -1,0 +1,49 @@
+<h1>Basics</h1>
+
+<p>A git repository consists of three areas. The working directory, staging area, and the .git directory</p>
+
+<figure class="figure-center">
+    <img src="/img/areas.png" width="720" height="296" alt="git areas" />
+    <figcaption><small>image courtesy of <a href="http://git-scm.com/">git-scm.com</a></small></figcaption>
+</figure>
+
+<h2>Working Directory</h2>
+
+<p>This is the area in your filesystem where you modify existing files and add new ones</p>
+
+<figure class="figure-center">
+    <img src="/img/lifecycle.png" width="720" height="297" alt="git lifecycle" />
+    <figcaption><small>image courtesy of <a href="http://git-scm.com/">git-scm.com</a></small></figcaption>
+</figure>
+
+<h3>File state</h3>
+
+<p>Files in the working directory and staging area have four states: untracked, unmodified, modified, and finally staged</p>
+
+<h4>Untracked</h4>
+
+<p>Any new files added to the working directory are considered <strong>untracked</strong>.</p>
+
+<h4>Unmodified</h4>
+
+<p>Files in the working area that haven't been changed since the last commit or clone are considered <strong>unmodifed</strong></p>
+
+<h4>Modified</h4>
+
+<p>Files that have been previously commited or were part of the initial clone - and then subsequently changed are considered <strong>modified</strong></p>
+
+<h4>Staged</h4>
+
+<p>Untracked or Modified can be set to the <strong>staged</strong> state by doing a <code>git add</code> command.</p>
+
+<h2>Staging Area</h2>
+
+<p>When you're at a point where you can commit your work. You use the command <code>git add</code> to add the files you wish to commit to the stage</p>
+
+<h2>.git Directory</h2>
+
+<p>After adding files to the staging area, you can commit those files to the .git directory by issuing a <code>git commit</code> command.</p>
+
+<p>This snapshots the commited files, creates an reference to the commit by check-summing them, and pushes that into the local repository.</p>
+
+<p><a ui-sref="branching" class="btn btn-default pull-right">Branching &rarr;</a></p>

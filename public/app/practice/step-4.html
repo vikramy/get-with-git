@@ -1,0 +1,27 @@
+<h2><small>Step 4</small><br />Clean Slate</h2>
+
+<p>In the previous step we modified one file, added one file, and then staged those changes to be committed.</p>
+
+<p>We're going to undo all of that.</p>
+
+<ol class="list-unstyled">
+    <li><code>git reset HEAD public/app/practice/final.html</code></li>
+    <li><code>git status</code></li>
+</ol>
+
+<p>Now were back to the state where final.html is modified, but no longer staged and ready to be committed.</p>
+
+<p>
+    <code>git checkout public/app/practice/final.html</code>
+</p>
+
+<p>All changes to final.html are gone and lost forever.</p>
+
+<ol class="list-unstyled">
+    <li><code>git reset HEAD .</code></li>
+    <li><code>git status</code></li>
+</ol>
+
+<p>Just like <code>git add .</code>, the '.' will reset all files and remove them from the Staging Area.</p>
+
+<p>Delete the step-42.html file</p>

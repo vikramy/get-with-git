@@ -1,0 +1,39 @@
+doctype
+html
+    head
+        link(rel='stylesheet', href='/scripts/bootstrap/dist/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/css/global.css')
+    body(ng-app='getWithGit')
+        nav.navbar.navbar-default.navbar-fixed-top
+            div.container
+                div.navbar-header
+                    a(ui-sref="home" class="navbar-brand") Get with Git
+                div
+                    ul.nav.navbar-nav
+                        li(ng-class="{active: $state.includes('origin')}")
+                            a(ui-sref="origin") Brief Origin of Git
+                        li(ng-class="{active: $state.includes('what-is-git')}")
+                            a(ui-sref="what-is-git") What is Git?
+                        li(ng-class="{active: $state.includes('basics')}")
+                            a(ui-sref="basics") Basics
+                        li(ng-class="{active: $state.includes('branching')}")
+                            a(ui-sref="branching") Branching
+                        li(ng-class="{active: $state.includes('commands')}")
+                            a(ui-sref="commands.command({commandName:'init'})") Commands
+                        li(ng-class="{active: $state.includes('github')}")
+                            a(ui-sref="github") GitHub
+                        li(ng-class="{active: $state.includes('practice')}")
+                            a(ui-sref="practice.step({practiceStep:'step-1'})") Practice
+
+        main.container
+            section.slide(ui-view)
+
+
+    script(src='/scripts/jquery/dist/jquery.min.js')
+    script(src='/scripts/bootstrap/dist/js/bootstrap.min.js')
+    script(src='/scripts/angular/angular.js')
+    script(src='/scripts/angular-animate/angular-animate.min.js')
+    script(src='/scripts/angular-ui-router/release/angular-ui-router.min.js')
+    script(src='/app/getWithGitApp.js')
+    script(src='/app/getWithGitCommands.js')
+    script(src='/app/getWithGitPractice.js')

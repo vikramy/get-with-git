@@ -1,0 +1,33 @@
+<h2><small>Step 3</small><br />Make Changes in the Working Directory</h2>
+
+<ol>
+    <li>
+        <p>Open the file public/app/practice/final.html</p>
+
+        <p>Add your information (name, github user name, and email - ignore favorite sandwich for now) into the empty table row</p>
+    </li>
+
+    <li>
+        <p>Create a new file in /public/app/practice/ with the name step-42.html</p>
+    </li>
+</ol>
+
+<p>Switch to your shell and execute the following:</p>
+
+<p><code>git status</code></p>
+
+<p>You'll see that final.html is listed as <span class="not-staged">Changes not staged to commit - modified</span> and step-42.html is listed as <span class="not-staged">untracked</span>.</p>
+
+<ol class="list-unstyled">
+    <li><code>git add public/app/practice/final.html</code></li>
+    <li><code>git status</code></li>
+</ol>
+
+<p>final.html is now listed as <span class="staged">Changes to be committed - modified</span> and step-42.html is still <span class="not-staged">untracked</span>.</p>
+
+<ol class="list-unstyled">
+    <li><code>git add .</code></li>
+    <li><code>git status</code></li>
+</ol>
+
+<p>git add . adds all unstaged and unmodified files. Now both files are listed as <span class="staged">Changes to be committed</span>... for now.</p>

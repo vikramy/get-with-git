@@ -1,0 +1,40 @@
+<h2><small>Step 5</small><br />Make Changes in the Working Directory Redux</h2>
+
+<p>Once again, open public/app/practice/final.html and add your information into the empty row (still ignore favorite sandwich).</p>
+
+<h3>Panic!</h3>
+
+<p>You've been informed to drop what you're doing and do a hotfix. The client no longer needs to know your favorite sandwich.</p>
+
+<ol class="list-unstyled">
+    <li><code>git stash</code></li>
+    <li><code>git branch hotfix</code></li>
+    <li><code>git branch checkout hotfix</code></li>
+</ol>
+
+<p>Your changes are now in the stash stack.</p>
+
+<p>Open public/app/practice/final.html and remove the &lt;th&gt;favorite sandwich&lt;/th&gt; tag.</p>
+
+<ol class="list-unstyled">
+    <li><code>git add public/app/practice/final.html</code></li>
+    <li><code>git commit -m "removed unecessary th"</code></li>
+</ol>
+
+<p>You've just added the file to stage, and then committed it.</p>
+
+<ol class="list-unstyled">
+    <li><code>git checkout master</code></li>
+    <li><code>git merge hotfix</code></li>
+    <li><code>git stash pop</code></li>
+</ol>
+
+<p>The hotfix is done and merged into master. You can now go back to work getting your information into the repository.</p>
+
+<p><code>git status</code></p>
+
+<p>You'll see that public/app/practice/final.html is listed as <span class="not-staged">Changes not staged to commit - modified</span>.</p>
+
+<p>Use the shortcut to commit all modified files (note! untracked files will not be added / commited)</p>
+
+<p><code>git commit -am 'added my personal info'</code></p>

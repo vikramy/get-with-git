@@ -1,0 +1,109 @@
+<h1>Branching</h1>
+
+<h2>Structure of a commit</h2>
+
+<p>In order to understand branching in git, it's helpful to understand what an individual commit is.</p>
+
+<figure class="figure-center">
+    <img src="/img/commit-and-tree.png" width="720" height="398" alt="git commit structure" />
+    <figcaption><small>image courtesy of <a href="http://git-scm.com/">git-scm.com</a></small></figcaption>
+</figure>
+
+<h3>Commit object</h3>
+
+<p>The commit object contains a commit comment, author, and a pointer to the commit tree. The commit object is referened by the checksum of the snapshot of the files</p>
+
+<p>Commit objects also contain a reference to the checksum of the commit before it</p>
+
+<h3>Tree</h3>
+
+<p>The tree contains a list of all the directories and files contained in the commit</p>
+
+<h3>Blobs</h3>
+
+<p>Git refers to the version of a file as a blob</p>
+
+<h2>A git Branch</h2>
+
+<figure class="figure-center">
+    <img src="/img/branch-and-history.png" width="720" height="398" alt="git branch structure" />
+    <figcaption><small>image courtesy of <a href="http://git-scm.com/">git-scm.com</a></small></figcaption>
+</figure>
+
+<p>A branch in git is simply a pointer to a particular commit.</p>
+
+<p>Creating a branch in git is considered "cheap" in git, since it only involves creating a new pointer</p>
+
+<p>If you've checked out a particular branch, there is also a HEAD pointer pointing to the branches pointer</p>
+
+<h2>Sample repository history</h2>
+
+<div id="repositoryHistory" class="carousel" data-ride="carousel" data-interval="false">
+    <ol class="carousel-indicators">
+        <li data-target="#repositoryHistory" data-slide-to="0" class="active"></li>
+        <li data-target="#repositoryHistory" data-slide-to="1"></li>
+        <li data-target="#repositoryHistory" data-slide-to="2"></li>
+        <li data-target="#repositoryHistory" data-slide-to="3"></li>
+        <li data-target="#repositoryHistory" data-slide-to="4"></li>
+        <li data-target="#repositoryHistory" data-slide-to="5"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+        <figure class="item active">
+            <img src="/img/head-to-master.png" alt="head pointing to master. new branch testing.">
+            <figcaption class="carousel-caption">
+                <figcaption>
+                    <h3>Create new branch <em>testing</em></h3>
+                    <small>image courtesy of <a href="http://git-scm.com/">git-scm.com</a></small>
+                </figcaption>
+            </figcaption>
+        </figure>
+        <figure class="item">
+            <img src="/img/head-to-testing.png" alt="head pointing to testing">
+            <figcaption class="carousel-caption">
+                <figcaption>
+                    <h3>Checkout branch <em>testing</em></h3>
+                    <small>image courtesy of <a href="http://git-scm.com/">git-scm.com</a></small>
+                </figcaption>
+            </figcaption>
+        </figure>
+        <figure class="item">
+            <img src="/img/advance-testing.png" alt="commit to testing">
+            <figcaption class="carousel-caption">
+                <figcaption>
+                    <h3>Commit to branch <em>testing</em></h3>
+                    <small>image courtesy of <a href="http://git-scm.com/">git-scm.com</a></small>
+                </figcaption>
+            </figcaption>
+        </figure>
+        <figure class="item">
+            <img src="/img/checkout-master.png" alt="checkout master">
+            <figcaption class="carousel-caption">
+                <figcaption>
+                    <h3>Checkout branch <em>master</em></h3>
+                    <small>image courtesy of <a href="http://git-scm.com/">git-scm.com</a></small>
+                </figcaption>
+            </figcaption>
+        </figure>
+        <figure class="item">
+            <img src="/img/advance-master.png" alt="commit to master">
+            <figcaption class="carousel-caption">
+                <figcaption>
+                    <h3>Commit to branch <em>master</em></h3>
+                    <small>image courtesy of <a href="http://git-scm.com/">git-scm.com</a></small>
+                </figcaption>
+            </figcaption>
+        </figure>
+        <figure class="item">
+            <img src="/img/merge.png" alt="commit to master">
+            <figcaption class="carousel-caption">
+                <figcaption>
+                    <h3>Merge <em>testing</em> branch into <em>master</em></h3>
+                    <small>image courtesy of <a href="http://git-scm.com/">git-scm.com</a></small>
+                </figcaption>
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+<p><a ui-sref="commands.command({commandName:'init'})" class="btn btn-default pull-right">Commands &rarr;</a></p>

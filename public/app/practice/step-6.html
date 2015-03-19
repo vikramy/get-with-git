@@ -1,0 +1,37 @@
+<h2><small>Step 6</small><br />Dealing with Conflict</h2>
+
+<p>Your personal information is now added and committed to your local repository.</p>
+
+<p>Before committing you should always update your local branch with the remote repository.</p>
+
+<p><code>git pull upstream</code></p>
+
+<p>Before committing you should always update your local branch with the remote repository.</p>
+
+<p><code>git status</code></p>
+
+<p>You'll see that someone else has made changes to their personal information in public/app/practice/final.html and it's causing a conflict</p>
+
+<p>Open the file to view the conflict</p>
+
+<pre>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD:public/app/practice/final.html
+            &lt;td&gt;Your Name&lt;/td&gt;
+            &lt;td&gt;yourusername&lt;/td&gt;
+            &lt;td&gt;your.email@icfi.com&lt;/td&gt;
+=======
+            &lt;td&gt;Jeff Heinrichs&lt;/td&gt;
+            &lt;td&gt;icf-jheinrichs&lt;/td&gt;
+            &lt;td&gt;jeff.heinrichs@icfi.com&lt;/td&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; [some checksum value]:public/app/practice/final.html
+</pre>
+
+<p>Resolve the conflict by moving your information to the to of the list and deleting the extra conflict marker code</p>
+
+<p><code>git commit -m 'merged upstream master into my master'</code></p>
+
+<h3>Undoing merges</h3>
+
+<p>If at first glance a merge seems particularily messy, you can back out of the merge by issuing the following:</p>
+
+<p><code>git merge --abort</code></p>

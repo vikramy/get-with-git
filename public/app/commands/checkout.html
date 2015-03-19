@@ -1,0 +1,15 @@
+<h2>Git Checkout</h2>
+
+<code>git checkout [branch name]</code>
+
+<p>Switch from current branch to branch specified. Git will allow you to switch to another branch with modified files. They will remain modified. You can then inadvertently commit the changes to the wrong branch. Either be sure to commit files before checking out another branch, or stash your changes.</p>
+
+<code>git checkout -b [branch name]</code>
+
+<p>This is a shortcut to create a new branch and switch to it.</p>
+
+<code>git checkout [file name]</code>
+
+<p>Allows you to remove any changes from a modified file and restore it to an unmodified state. Be careful with this command - you will lose work if you checkout the wrong file (this is the equivalent of SVN revert). If a file is staged, this will have no effect.</p>
+
+<p><a href="http://git-scm.com/docs/git-checkout" class="btn btn-xs btn-default">More Info</a></p>
